@@ -13,7 +13,10 @@ namespace qarrot
         static async Task Main(string[] args)
         {
             // target T as ConsoleAppBase.
-            await Host.CreateDefaultBuilder().RunConsoleAppFrameworkAsync<Program>(args);
+            await Host.CreateDefaultBuilder().RunConsoleAppFrameworkAsync(args, new ConsoleAppOptions
+            {
+                StrictOption = true
+            });
         }
 
         private void PrintLogo()
