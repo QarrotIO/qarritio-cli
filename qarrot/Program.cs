@@ -38,7 +38,7 @@ namespace qarrot
             Console.WriteLine("\r\n");
         }
 
-        public IEnumerable<string> GetCommands()
+        private IEnumerable<string> GetCommands()
         {
             var methods =
                 typeof(Program).GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
