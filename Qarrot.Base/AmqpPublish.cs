@@ -1,15 +1,17 @@
-﻿using System;
-using ConsoleAppFramework;
-using Qarrot.Core;
+﻿using System.Threading.Tasks;
+using CliFx;
+using CliFx.Attributes;
+using CliFx.Infrastructure;
 
 namespace Qarrot.Base
 {
-    public class AmqpPublish : Publish
+    [Command("publish amqp", Description = "Publish via AMQP")]
+    public class AmqpPublish : ICommand
     {
-        [Command("amqp", "Publish via AMQP")]
-        public override void Execute()
+        public ValueTask ExecuteAsync(IConsole console)
         {
-            Console.WriteLine("Publishing via AMQP");
+            console.Output.WriteLine("Executing from AmqpPublish..");
+            return default;
         }
     }
 }

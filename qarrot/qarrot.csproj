@@ -3,9 +3,11 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Version>1.2.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="CliFx" Version="2.0.6" />
       <PackageReference Include="ConsoleAppFramework" Version="3.3.1" />
     </ItemGroup>
 
