@@ -29,7 +29,7 @@ namespace Qarrot.Tests
             var stdout = console.ReadOutputString();
             
             // Assert
-            Assert.That(stdout, Is.EqualTo("Publishing via AMQP to: amqp:\\\\admin:admin@localhost:15672...\r\n"));
+            Assert.That(stdout, Is.EqualTo("Publishing via AMQP to: amqp:\\\\admin:admin@localhost:15672...\n"));
         }
     }
 }
