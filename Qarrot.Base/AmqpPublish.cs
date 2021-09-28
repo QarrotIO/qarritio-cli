@@ -8,7 +8,7 @@ namespace Qarrot.Base
     [Command("publish amqp", Description = "Publish via AMQP")]
     public class AmqpPublish : ICommand
     {
-        [CommandOption("host", 'h', Description = "Hostname of the AMQP destination")]
+        [CommandOption("host", IsRequired = true, Description = "Hostname of the AMQP destination")]
         public string Hostname { get; set; }
 
         [CommandOption("username", 'u', Description = "Username of the AMQP destination")]
