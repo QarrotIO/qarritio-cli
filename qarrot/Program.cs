@@ -22,7 +22,6 @@ namespace qarrot
                 .SetExecutableName("qarrot")
                 .Build()
                 .RunAsync();
-
         }
         private static string GetLogo()
         {
